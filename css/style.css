@@ -1,2 +1,24 @@
-body {
+/**** Styles for navigation bar *****/
+
+.top-navigation {
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    border-bottom: 1px solid #DDD;
+    z-index: 9999;
+}
+
+.top-navigation .links li{
+    display: inline-block;
+    margin-left: 1.563rem;
+}
+
+.top-navigation .links {
+    float: right;
+    color: #838994;
+    margin-top: 1.7rem;
+}
+
+.logo {
+    margin: 1rem;
 }
