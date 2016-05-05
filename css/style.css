@@ -1,29 +1,44 @@
 /**** Styles for navigation bar *****/
 
-.top-navigation {
-    position: fixed;
-    background-color: #fff;
-    border-bottom: 1px solid #DDD;
-    z-index: 9999;
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
-.top-navigation > .content {
+.content {
     width: 970px;
     height: 70px;
     margin: 0 auto;
 }
 
-.top-navigation .links li{
-    display: inline-block;
-    margin-left: 1.563rem;
+.top-navigation {
+    background-color: #fff;
+}
+
+.top-navigation .content .logo{
+    margin-left: 14px;
+    height: 4.375rem;
 }
 
 .top-navigation .links {
     float: right;
+    font-family: 'Roboto', sans-serif;
     color: #838994;
-    margin-top: 1.7rem;
+    font-size: 16px;
+    margin-top: 25px;
+    -webkit-font-smoothing: antialiased;
 }
-
-.logo {
-    margin: 1rem;
+.top-navigation .links li {
+    display: inline-block;
+    margin-left: 25px;
+}
+.top-navigation .links > .active {
+    color: #4c5058;
+    font-weight: 500;
+}
+.top-navigation .links li:hover {
+    cursor: pointer;
+    color: #333333;
 }
